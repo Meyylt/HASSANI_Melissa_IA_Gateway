@@ -20,7 +20,7 @@ Nous avons eu trois séances pour finaliser le projet, j'ai donc pour chaque sé
 1 - **Prompt :** "fais moi le backend de mon appli, je veux que l'ia analyse le cv (pdf) par rapport a l'offre d'emploi  et me donne un score et des conseils, je veux pouvoir mettre le lien d'une annonce directement dans le site."
 - **Problème :** J'ai dû faire face au **Web Scraping** des sites d'emploi qui bloquaient l'accès aux données **(erreurs 403 Forbidden, protections anti-scraping)**, ce qui empêchait l'IA de lire l'annonce directement depuis l'URL.
 - **Solution :** je suis passée a une autre solution qui était plus rapide et c'était de juste mettre des fichiers txt en offre, ca a resolu le problème, je me suis dis que je pourrais envisager de trouver une solution au scraping plus tard.
-- **Ce que j'ai retenu :** 'ai appris que les pages web protègent activement leurs données. J'ai aussi compris qu'en développement, il faut savoir s'adapter quand un obstacle gêne le développement du projet.
+- **Ce que j'ai retenu :** J'ai appris que les pages web protègent activement leurs données. J'ai aussi compris qu'en développement, il faut savoir s'adapter quand un obstacle gêne le développement du projet.
 - 
 2 - **Prompt :** "Mon backend me renvoie 200 OK mais le resultat de l'analyse ne s'affiche pas sur mon site react"
 - **Problème :** La connexion entre le front et le back semblait marcher car mon serveur me renvoyait un code de succès "200 OK" quand j'envoyais les fichiers. Sauf que l'analyse ne s'affichait pas. C'était un problème de parsing JSON et de gestion d'état dans mon composant.
@@ -29,7 +29,7 @@ Nous avons eu trois séances pour finaliser le projet, j'ai donc pour chaque sé
 3 - **Prompt :** Comment je fais pour que l'IA comprenne quand il ya des concepts qui sont pareils mais que le mon utilisé pour les deux n'est pas le méme par exemple "Developpeur js" et "React" qu'elle fasse pas juste chercher des mots clés exacts ?
 - **Problème :** Je craignais que l'IA se comporte comme un vieux script et se contente de comparer le CV et l'offre "mot pour mot".
 - **Solution :** On a concu un prompt qui force l'IA à analyser la sémantique et les compétences globales, ce qui a rendu le score de compatibilité beaucoup plus intelligent et proche de la réalité.
-- **Le prompt que j'ai amélioré dans mon projet: ** "Agis comme un recruteur expert. Ne fais pas que chercher des mots-clés exacts. Évalue la sémantique et les compétences transférables"
+- **Le prompt que j'ai amélioré dans mon projet :** "Agis comme un recruteur expert. Ne fais pas que chercher des mots-clés exacts. Évalue la sémantique et les compétences transférables"
 
 
 4 - **Prompt :** ma clé API est en dur dans mon code **main.py**
